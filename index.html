@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name='theme-color' content='#ff00ff'>
+    <meta name="author" content="Avinash Bharti | @avinashbharti97">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <title>Obscura</title>
+  </head>
+
+  <style>
+    html {
+        height: 100%;
+        overflow-x:hidden;
+        }
+    body {
+        height: 100%;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-image: linear-gradient(115deg, #7028e4 0%, #e5b2ca 100%);
+        overflow-x:hidden;
+        }
+    #menu{
+        position:fixed;
+		height: 100vh;
+		display:block;
+		width: 5%;
+		background: #fff;
+		z-index:9;
+		color: #262626;
+		padding: 20px 0 0 0;
+        left:0px;
+        box-shadow: 5px 0px 6px rgba(0, 0, 0, 0.25);
+    }
+    a{
+        color:#5a5656;
+    }
+
+    @media only screen and (max-width: 768px) {
+        #menu{
+            position:fixed;
+            height:50px;
+            width:100vw;
+            bottom:0px;
+            display:block;
+            background:#fff;
+            z-index:9;
+
+        }
+        .home{
+            margin:0 auto;
+        }
+        #obscura-text{
+            font-size:40px;
+        }
+    } 
+
+
+
+#spinning-circle {
+  animation-name: spinning-circle;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+
+}
+.login-row{
+    margin-top:150px;
+}
+
+@-webkit-keyframes spinning-circle {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+}
+      
+  </style>
+
+  <body>
+        <div id="menu">
+            <div class="container">
+                <div class="row my-5"> 
+                    <div class="col-4 col-sm-12 home my-4">
+                        <a href="#firstPage" class="fas fa-home" style="font-size:20px;"></a>
+                    </div>
+                    <div class="col-4 col-sm-12 home my-4">
+                        <a href="#secondPage" class="fas fa-chalkboard-teacher" style="font-size:20px;"></a>
+                    </div>
+                    <div class="col-4 col-sm-12 home my-4">
+                        <a href="#thirdPage" class="fas fa-user-astronaut" style="font-size:20px;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="fullpage">
+            <div class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 my-5">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div style="display:inline-block;width:30px; height:.5px; border-style:solid; border-color:white;border-top:none; border-left:none; border-right:none"></div>
+                                        <div style=""><p style="color:white; font-size:15px; margin-bottom:-20px; font-family: 'Open Sans Condensed', sans-serif;">NIT Kurukshetra</p></div>
+                                        <span style="color:white; font-size:80px; font-family: 'Anton', sans-serif;" id="obscura-text">Obscura 6.0</span></br>
+                                        <span style="color:white; font-size:20px;">An Online crypthunt</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row login-row">
+                                    <div class="col-6" >
+                                        <a class="fab fa-facebook-square" style="color:white; font-size:30px"></a><span style="color:white; font-family: 'Open Sans Condensed', sans-serif;margin-left:10px; margin-bottom:10px">Login using facebook</span>
+                                    </div>
+                                    <div class="col-6">
+                                        <a class="fab fa-google-plus-square" style="color:white; font-size:30px"></a><span style="color:white; font-family: 'Open Sans Condensed', sans-serif;margin-left:10px; margin-bottom:10px">Login using google</span>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <!-- <div style="position:absolute; right:0px; color:white; font-family: 'Open Sans Condensed', sans-serif;"><div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                       a
+                                      </div>
+                                      <div class="carousel-item">
+                                        b
+                                      </div>
+                                      <div class="carousel-item">
+                                        c
+                                      </div>
+                                    </div>
+                                  </div></div> -->
+                            <div id="spinning-circle">
+                                    <img src="logo2.svg" height="100%" width="100%">
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 style="font-family: 'Anton', sans-serif; color:white">Rules.</h1>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card p-2 my-3">
+                                #1 loreum ipsum dolor sit
+                            </div>
+                            <div class="card p-2 my-3">
+                                #1 loreum ipsum dolor sit
+                            </div>
+                            <div class="card p-2 my-3">
+                                #1 loreum ipsum dolor sit
+                            </div>
+                            <div class="card p-2 my-3">
+                                #1 loreum ipsum dolor sit
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">Some section</div>
+            <div class="section">Some section</div>
+        </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.js"></script>
+
+    <script>
+        new fullpage('#fullpage', {
+            //options here
+            autoScrolling:true,
+            scrollHorizontally: true,
+            anchors:['firstPage', 'secondPage', 'thirdPage'],
+            menu: '#menu',
+            navigation:true,
+            responsiveWidth: 1100,
+            afterResponsive: function(isResponsive){
+
+            }
+        });
+
+        //methods
+        fullpage_api.setAllowScrolling(false);
+
+        $('.carousel').carousel()
+    </script>
+
+  </body>
+</html>
